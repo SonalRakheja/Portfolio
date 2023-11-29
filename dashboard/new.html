@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+    <style>
+        .container1{
+            display: grid;
+            grid-template-columns: 83px 835px 400px 450px ;
+            grid-template-rows:auto auto 300px auto;
+            gap: 5px 5px;
+            height: 250px;
+            width: 100%;
+
+        }
+        .item11{
+            border: 1px solid #8080804a;
+            height: 50px;
+            padding: 2px;
+            font-size: 20px;
+            color: blue;
+        }
+        .item12{
+            border: 1px solid #8080804a;
+            grid-column: 2/4; 
+            padding: 10px;
+            box-sizing: border-box;
+            color: gray;
+            font-size: 18px; 
+        }
+        .item13{
+            border: 1px solid #8080804a;
+            grid-row: 2/6;
+            height: 750px;
+        }
+        .item14{
+            border: 1px solid #8080804a;
+            grid-row: 2/6;
+            height: 750px;
+        }
+        .item15{
+            border: 1px solid #8080804a;
+            height: 370px;
+            grid-row-end: 3;
+            grid-row: 2/5;
+            background-image: url(graph.png);
+            background-size: contain;
+        }   
+        .item16{
+            border: 1px solid #8080804a;
+            grid-row-end: 6;
+            height: 370px;
+            background-image: url(pie-chart.png);
+            background-size: contain;
+        }
+        .accpic{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        .db-list{
+            list-style: none;
+            font-size: 32px;
+            padding: 10px 22px;
+        }
+        .line1{
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            align-items: center;
+            margin: -3px 25px;
+            padding: 0px 5px;
+        }
+        .gogreen{
+            height: 4px;
+            color:  rgb(34, 219, 34);
+            background:  rgb(34, 219, 34);
+            margin: 0px 30px;
+        }
+        .line2{
+            margin: 0px 30px;
+        }
+        .calender{
+            text-align: center;
+            width: 65%;
+            height: 90px;
+            margin: 0px auto;
+            font-weight: bold;
+            color: gray;
+        }
+        .date{
+            border: 1px solid blue;
+            border-radius: 55%;
+            background-color: blue;
+            color: white;
+
+        }
+        .day{
+            color: blue;
+        }
+        .cards{
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px 10px;
+            padding: 0px 10px;
+        }
+        .cta{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            gap: 5px;
+            padding: 7px 10px;
+        }
+        .profile{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .cta-btn{
+            margin: 5px 5px;
+            padding: 10px;
+            background-color: rgb(34, 219, 34);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 8px 15px;
+        }
+        .box1{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: 10px 20px;
+        }
+        .light{
+            color: gray;
+            padding: 0px 20px;
+        }
+        .last{
+            color: blue;
+            font-weight:bold ;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .accpic2{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <section class="container1">
+
+        <div class="item11">SaaS Kit</div>
+        <div class="item12">
+            <i class='bx bx-search' style="margin: 0px 10px;"></i>
+                Global Search 
+                <i class='bx bx-bell' style="margin-left: 1025px;"></i>
+        </div>
+        <div class="item13">
+            
+                <div>
+                    <img src="femaledp.jpg" alt="" class="accpic" style="padding: 10px;">
+                </div>   
+                <div>
+                    <ul class="db-list">
+                    <li><span style="color:rgb(2, 40, 255) ;"> <a href="index.html"style="text-decoration: none;"><i class='bx bxs-dashboard'></i> </a> </span></li>
+                    <li><i class='bx bx-task'></i>  </li>
+                    <li>  <a href="email.html"style="text-decoration: none;"> <i class='bx bx-envelope' ></i></a> </li>
+                    <li> <a href="contacts.html"style="text-decoration: none;"><i class='bx bx-user'></i> </a> </li>
+                    <li> <a href="chats.html"style="text-decoration: none;"><i class='bx bx-chat'></i> </a></li>
+                    <li><i class='bx bx-bracket'></i></li>
+                    <hr>
+                    <li> <i class='bx bx-dots-horizontal-rounded'></i></li>
+
+                    </ul>
+                </div>             
+            
+
+        </div>
+        <div class="item14">
+            <section>
+                <div class="line1">
+                    <p>8 tasks completed out of 10</p>
+                    <p>Show: <a href="" style="text-decoration: none;">This Week</a></p>
+                </div>
+                
+                <hr class="gogreen">
+                
+                <div class="line2">
+                    <p><b>23 December, Sunday</b></p>
+                </div>
+
+                <div >
+                    
+                <table class="calender">
+                    <tbody>
+                    <tr>
+                        <td>Sun</td>
+                        <td class="day">Mon</td>
+                        <td>Tues</td>
+                        <td>Wed</td>
+                        <td>Thur</td>
+                        <td>Fri</td>
+                        <td>Sat</td>
+                    </tr>
+                    <tr>
+                        <td class="date">23</td>
+                        <td class="day">24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+
+                    </tr>
+                </tbody>
+                </table>
+                </div>
+
+                <section class="box1">
+
+                    <div class="cards">
+                        <div>
+                            <h4>Send Benefit reviews by Sunday.</h4>
+                        </div>
+                        <div>
+                        <span>Reminder</span>
+                        </div>
+                        
+                    </div>
+                        <p class="light">Due date: December 23, 2018</p>
+                    <div>
+                        <div class="cta">
+                            <div class="profile">
+                                <img src="femaledp.jpg" alt="" class="accpic2">
+                                <p>Sierra Ferguson</p>
+                            </div>                               
+                            <div>
+                                <button class="cta-btn">Completed</button>
+                            </div>
+                    </div>   
+                </section>
+                <section class="box1">
+
+                    <div class="cards">
+                        <div>
+                            <h4>Invite to Office meet-up.</h4>
+                        </div>
+                        <div>
+                        <span>Call</span>
+                        </div>
+                        
+                    </div>
+                        <p class="light">Due date: December 23, 2018</p>
+                    <div>
+                        <div class="cta">
+                            <div class="profile">
+                                <img src="femaledp.jpg" alt="" class="accpic2">
+                                <p>Rebecca Moore</p>
+                            </div>                               
+                            <div>
+                                <button class="cta-btn" style="background-color: red;">Ended</button>
+                            </div>
+                    </div>   
+                </section>
+                <section class="box1">
+
+                    <div class="cards">
+                        <div>
+                            <h4>Office meet-up.</h4>
+                        </div>
+                        <div>
+                        <span>Event</span>
+                        </div>
+                        
+                    </div>
+                        <p class="light">Due date: December 23, 2018</p>
+                    <div>
+                        <div class="cta">
+                            <div class="profile">
+                                <img src="femaledp.jpg" alt="" class="accpic2">
+                                <p>Lindsey Paul</p>
+                            </div>                               
+                            <div>
+                                <button class="cta-btn">Completed</button>
+                            </div>
+                    </div>   
+                </section>
+
+            
+
+            </section>
+
+
+        </div>
+        <div class="item15"></div>
+        <div class="item16"></div>
+
+
+
+
+
+    </section>
+    
+</body>
+</html>

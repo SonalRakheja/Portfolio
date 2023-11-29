@@ -70,9 +70,10 @@ function sendMail(e) {
     let templateParams = {
         subject: subject,
         from_name: name,
-        to_name: "Sonal",
+        to_name: "Sonal Rakheja",
         message: `${message}
-         Here are my details :  ${mailMessage} `
+         Here are my details : 
+          ${mailMessage} `
     }
 
     emailjs.send("service_kxnaqwg", "template_3jtk4kn", templateParams, "9BUXo4lOiyMyA0RKb").then(function (response) {

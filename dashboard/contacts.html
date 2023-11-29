@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container2{
+            display: grid;
+            grid-template-columns: 250px 680px 400px 450px ;
+            grid-template-rows:auto auto 300px auto;
+            gap: 5px 5px;
+            height: 250px;
+            width: 100%;
+        }
+
+        .item21{
+            border: 1px solid #8080804a;
+            height: 50px;
+            padding: 15px;
+            font-size: 30px;
+            color: blue;
+            
+        }
+        .item22{
+            border: 1px solid #8080804a;
+            grid-column: 2/4; 
+            padding: 10px;
+            box-sizing: border-box;
+            color: gray;
+            font-size: 18px; 
+        }
+        .item23{
+            border: 1px solid #8080804a;
+            grid-row: 2/6;
+            height: 750px;
+        }
+        .item24{
+            border: 1px solid #8080804a;
+            grid-row: 2/6;
+            grid-column: 2/4;
+            height: 750px;
+        }
+
+        .account{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            padding: 15px;
+            /*border-top: 1px solid gray;*/
+        }
+        .accpic{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        ul{
+            list-style: none;
+            padding: 15px;
+
+        }
+        li{
+            padding: 15px;
+            font-size: 20px;
+        }
+        .line-heading{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px auto;
+            padding: 10px 10px;
+        }
+        button{
+            background-color: rgb(2, 40, 255);
+            color: white;
+            padding: 7px 20px;
+            border: none;
+        }
+        a{
+            color:rgb(2, 40, 255) ;
+            text-decoration: none;
+        }
+        table{
+            border: 1px solid #8080804a;
+            width: 100%;
+            text-align: center;
+            padding-top: 10px ;
+            height: 680px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <section class="container2">
+        <div class="item21">SaaS Kit</div>
+        <div class="item22">
+            <i class='bx bx-search' style="margin: 0px 10px;"></i>
+            Search for a contact 
+                <i class='bx bx-bell' style="margin-left: 845px;"></i>
+        </div>
+        <div class="item23">
+            <div class="account">
+                <div>
+                    <img src="femaledp.jpg" alt="" class="accpic">
+                </div>
+                <div>
+                    <h3>Sierra Ferguson</h3>
+                    <span>
+                        s.ferguson@gmail.com
+                    </span>
+                </div>                   
+            </div>
+            <div>
+                <ul>
+                <li><i class='bx bxs-dashboard'></i> <span>  <a href="index.html"style="text-decoration: none; color: black; "> Dashboard</a> </span> </li>
+                <li><i class='bx bx-task'></i> <span>Task</span> </li>
+                <li><i class='bx bx-envelope' ></i>  <a href="email.html"style="text-decoration: none; color: black; "> Emails</a></li>
+                <li><i class='bx bx-user'></i> <span style="color:rgb(2, 40, 255) ;">Contacts</span></li>
+                <li><i class='bx bx-chat'></i>  <a href="chats.html"style="text-decoration: none; color: black; "> Chats</a></li>
+                <li><i class='bx bx-bracket'></i> Deals</li>
+                <hr>
+                <li> <i class='bx bx-dots-horizontal-rounded'></i> Settings </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="item24">
+            <div class="line-heading">
+                <div>
+                    <span>Company: <a href="">All</a></span>
+                </div>
+                <div>
+                    <button>
+                        Add Contact
+                    </button>
+                </div>
+            </div>
+            
+            <table>
+                <tbody>
+                    <tr>
+                        <td> <input type="checkbox"></td>
+                        <td>Name</td>
+                        <td>Email</td>
+                        <td>Contact</td>
+                        <td>Company Name</td>
+                        <td>Role</td>
+                        <td>Forecast</td>
+                        <td>Recent Activity</td>
+
+                    </tr>
+
+                    <tr>
+                        <td> <input type="checkbox"></td>
+                        <td> Lindsey Stroud</td>
+                        <td>lindsey.stroud@gmail.com</td>
+                        <td>920XXXXX06</td>
+                        <td>Hatchbuck</td>
+                        <td>Manager</td>
+                        <td>50%</td>
+                        <td>5 Minutes ago</td>
+
+                    </tr>
+                    
+                    <tr>
+                        <td> <input type="checkbox"></td>
+                        <td>Nicci Troiani</td>
+                        <td>Nicci.troiani@gmail.com</td>
+                        <td>987XXXXX56</td>
+                        <td>Stack</td>
+                        <td>Manager </td>
+                        <td>75%</td>
+                        <td>14 Minutes ago</td>
+
+                    </tr>
+                    
+                    <tr>
+                        <td> <input type="checkbox"></td>
+                        <td>George Fields</td>
+                        <td>George.fields@gmail.com </td>
+                        <td>927XXXXX50</td>
+                        <td>Clockify</td>
+                        <td>CEO</td>
+                        <td>10% </td>
+                        <td>6 Hours ago</td>
+
+                    </tr>
+                    
+                    <tr>
+                        <td> <input type="checkbox"></td>
+                        <td>Rebecca Moore</td>
+                        <td>rebecca.moore@gmail.com </td>
+                        <td>981XXXXX10</td>
+                        <td>Upwork</td>
+                        <td>Manager</td>
+                        <td> 25%</td>
+                        <td>Dec 14,2018</td>
+
+                    </tr>
+                    
+                    <tr>
+                        <td> <input type="checkbox"></td>
+                        <td> Jane Deo</td>
+                        <td>jane.deo@gmail.com </td>
+                        <td>935XXXXX56</td>
+                        <td>Trello</td>
+                        <td>Engineer</td>
+                        <td>30%</td>
+                        <td>Dec 12,2018</td>
+
+                    </tr>
+                    
+                    <tr>
+                        <td> <input type="checkbox"></td>
+                        <td>Daisy John</td>
+                        <td>daisy.john@gmail.com </td>
+                        <td>937XXXXX26</td>
+                        <td>Stack</td>
+                        <td>Developer</td>
+                        <td>40%</td>
+                        <td>Dec 11,2018</td>
+
+                    </tr>
+                    
+                    <tr>
+                        <td> <input type="checkbox"></td>
+                        <td>Taylor Swift</td>
+                        <td>taylor.swift@gmail.com </td>
+                        <td>956XXXXX85</td>
+                        <td>Google</td>
+                        <td>Manager</td>
+                        <td>60%</td>
+                        <td>Dec 9,2018</td>
+
+                    </tr>
+                    
+                    <tr>
+                        <td> <input type="checkbox"></td>
+                        <td>Martin Merces</td>
+                        <td>Martin.merces@gmail.com </td>
+                        <td>997XXXXX87</td>
+                        <td>Facebook</td>
+                        <td>Manager</td>
+                        <td>100%</td>
+                        <td>Dec 6,2018</td>
+
+                    </tr>
+                    
+                    <tr>
+                        <td> <input type="checkbox"></td>
+                        <td>John Smith</td>
+                        <td>john.smith@gmail.com </td>
+                        <td>907XXXXX21</td>
+                        <td>Skype</td>
+                        <td>CEO </td>
+                        <td>75%</td>
+                        <td>Nov 30,2018</td>
+
+                    </tr>
+                    
+                    <tr>
+                        <td> <input type="checkbox"></td>
+                        <td>John williams</td>
+                        <td>john.williams@gmail.com </td>
+                        <td>957XXXXX56</td>
+                        <td>Google</td>
+                        <td>Designer</td>
+                        <td>45%</td>
+                        <td>Nov 26,2018</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+
+
+
+
+
+    </section>
+
+</body>
+</html>

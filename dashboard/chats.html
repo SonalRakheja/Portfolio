@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 250px 480px 600px 450px ;
+            grid-template-rows:auto auto 300px auto;
+            gap: 5px 5px;
+            height: 250px;
+            width: 100%;
+
+        }
+        .item1{
+            border: 1px solid #8080804a;
+            height: 50px;
+            padding: 15px;
+            font-size: 30px;
+            color: blue;
+        }
+        .item2{
+            border: 1px solid #8080804a;
+            grid-column: 2/4; 
+            padding: 10px;
+            box-sizing: border-box;
+            color: gray;
+            font-size: 18px;            
+        }
+        .item3{
+            border: 1px solid #8080804a;
+            height: 750px;
+            grid-row: 2/6;
+        }
+        .item4{
+            border: 1px solid #8080804a;
+            grid-row: 2/6;
+            height: 750px;
+        }
+        .item5{
+            border: 1px solid #8080804a;
+            height: 750px;
+            
+            grid-row: 2/5;
+                  
+        }
+        .account{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            padding: 15px;
+            /*border-top: 1px solid gray;*/
+        }
+        .accpic{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        ul{
+            list-style: none;
+            padding: 15px;
+
+        }
+        li{
+            padding: 15px;
+            font-size: 20px;
+        }
+        .dp{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        }
+        .chatbox{
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px auto;
+            padding: 10px 10px;
+        }
+        .person{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            justify-content: center;
+        }
+        .chat1{
+            background-color: rgb(2, 40, 255);
+            color: white;
+            width: 495px;
+            margin: 10px 15px;
+            padding: 20px 15px;
+            border-radius: 0px 15px 10px;
+        }
+        .chat2{
+            width: 425px;
+            border: 1px solid gray;
+            margin: 10px 15px;
+            margin-left: 155px;
+            padding: 18px 15px;
+            border-radius: 15px 0px 15px 10px;
+        }
+        .chat3{
+            background-color: rgb(2, 40, 255);
+            color: white;
+            width: 385px;
+            margin: 10px 15px;
+            padding: 20px 15px;
+            border-radius: 0px 15px 10px;
+        }
+        .name{
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 10px;
+            padding: 0px 20px;
+        }
+        .name2{
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-left: 530px;
+            padding: 0px 20px;
+        }
+        .last{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            color: gray;
+        }
+        .datetime{
+            color: gray;
+            font-size: 14px;
+        }
+        .chatlist1{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            align-items: center;
+            padding: 10px;
+        }
+        .message{
+            margin: 0px 45px;
+            font-family: system-ui;
+            padding-bottom:15px ;
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="container">
+        <div class="item1">SaaS Kit</div>
+        <div class="item2">
+                <i class='bx bx-search' style="margin: 0px 10px;"></i>
+                    Search by contact or message
+                    <i class='bx bx-bell' style="margin-left: 775px;"></i>
+            
+        </div>
+        <div class="item3">
+
+                <div class="account">
+                    <div>
+                        <img src="femaledp.jpg" alt="" class="accpic">
+                    </div>
+                    <div>
+                        <h3>Sierra Ferguson</h3>
+                        <span>
+                            s.ferguson@gmail.com
+                        </span>
+                    </div>                   
+                </div>
+                <div>
+                    <ul>
+                    <li><i class='bx bxs-dashboard'></i> <span>  <a href="index.html"style="text-decoration: none; color: black; "> Dashboard</a> </span> </li>
+                    <li><i class='bx bx-task'></i> <span>Task</span> </li>
+                    <li><i class='bx bx-envelope' ></i>  <a href="email.html"style="text-decoration: none; color: black; "> Emails</a></li>
+                    <li><i class='bx bx-user'></i>  <a href="contacts.html"style="text-decoration: none; color: black; "> Contacts</a></li>
+                    <li><i class='bx bx-chat'></i> <span style="color:rgb(2, 40, 255) ;">Chats</span></li>
+                    <li><i class='bx bx-bracket'></i> Deals</li>
+                    <hr>
+                    <li> <i class='bx bx-dots-horizontal-rounded'></i> Settings </li>
+    
+                    </ul>
+                </div>
+            
+        </div>
+        <div class="item4">
+            <div class="chatlist1">
+                <div class="person">
+                    <img src="femaledp.jpg" alt="" class="dp"> <span> Lindsey Stroud </span>
+                </div>
+                     <div class="datetime">
+                     30 Dec 2018, 12:34
+                     </div>
+            </div>
+                    <div class="message">
+                       <p>Your idea for this application is nice!</p>
+                    </div>
+            <hr>
+
+            <div class="chatlist1">
+                <div class="person">
+                    <img src="femaledp.jpg" alt="" class="dp"> <span> Lindsey Stroud </span>
+                </div>
+                     <div class="datetime">
+                     30 Dec 2018, 12:34
+                     </div>
+            </div>
+                    <div class="message">
+                       <p>Your idea for this application is nice!</p>
+                    </div>
+            <hr>
+
+            <div class="chatlist1">
+                <div class="person">
+                    <img src="femaledp.jpg" alt="" class="dp"> <span> Lindsey Stroud </span>
+                </div>
+                     <div class="datetime">
+                     30 Dec 2018, 12:34
+                     </div>
+            </div>
+                    <div class="message">
+                       <p>Your idea for this application is nice!</p>
+                    </div>
+            <hr>
+
+            <div class="chatlist1">
+                <div class="person">
+                    <img src="femaledp.jpg" alt="" class="dp"> <span> Lindsey Stroud </span>
+                </div>
+                     <div class="datetime">
+                     30 Dec 2018, 12:34
+                     </div>
+            </div>
+                    <div class="message">
+                       <p>Your idea for this application is nice!</p>
+                    </div>
+            <hr>
+
+            <div class="chatlist1">
+                <div class="person">
+                    <img src="femaledp.jpg" alt="" class="dp"> <span> Lindsey Stroud </span>
+                </div>
+                     <div class="datetime">
+                     30 Dec 2018, 12:34
+                     </div>
+            </div>
+                    <div class="message">
+                       <p>Your idea for this application is nice!</p>
+                    </div>
+            <hr>
+
+            <div class="chatlist1">
+                <div class="person">
+                    <img src="femaledp.jpg" alt="" class="dp"> <span> Lindsey Stroud </span>
+                </div>
+                     <div class="datetime">
+                     30 Dec 2018, 12:34
+                     </div>
+            </div>
+                    <div class="message">
+                       <p>Your idea for this application is nice!</p>
+                    </div>
+            <hr>
+
+            <div class="chatlist1">
+                <div class="person">
+                    <img src="femaledp.jpg" alt="" class="dp"> <span> Lindsey Stroud </span>
+                </div>
+                     <div class="datetime">
+                     30 Dec 2018, 12:34
+                     </div>
+            </div>
+                    <div class="message">
+                       <p>Your idea for this application is nice!</p>
+                    </div>
+            <hr>
+
+            <div class="chatlist1">
+                <div class="person">
+                    <img src="femaledp.jpg" alt="" class="dp"> <span> Lindsey Stroud </span>
+                </div>
+                     <div class="datetime">
+                     30 Dec 2018, 12:34
+                     </div>
+            </div>
+                    <div class="message">
+                       <p>Your idea for this application is nice!</p>
+                    </div>
+            <hr>
+
+            <div class="chatlist1">
+                <div class="person">
+                    <img src="femaledp.jpg" alt="" class="dp"> <span> Lindsey Stroud </span>
+                </div>
+                     <div class="datetime">
+                     30 Dec 2018, 12:34
+                     </div>
+            </div>
+                    <div class="message">
+                       <p>Your idea for this application is nice!</p>
+                    </div>
+
+        </div>
+        <div class="item5">
+            <div class="chatbox">
+                <div class="person">
+               <img src="femaledp.jpg" alt="" class="dp"> <span> Lindsey Stroud </span>
+                </div>
+                <div>
+                <i class='bx bx-dots-vertical-rounded'></i>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <p class="name">Lindsey Stroud</p>
+                <div class="chat1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum quasi,
+                        minus autem magni consequatur, illum in, explicabo expedita deleniti consectetur 
+                        excepturi rerum esse hic voluptatibus eos temporibus! Nobis perferendis in cumque repellendus,
+                        error laboriosam sunt tenetur voluptatibus omnis dolore! Sunt!</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="name2">You</p>
+                <div class="chat2">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum quasi,
+                        minus autem magni consequatur, illum in,
+                        error laboriosam sunt tenetur voluptatibus omnis dolore! Sunt!</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="name">Lindsey Stroud</p>
+                <div class="chat3">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum quasi,
+                        minus autem magni consequatur</p>
+                </div>
+            </div>
+            <div>
+                <p class="name2">You</p>
+                <div class="chat2">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum quasi,
+                        minus autem magni consequatur, illum in,
+                        error laboriosam sunt tenetur voluptatibus omnis dolore! Sunt!</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="name">Lindsey Stroud</p>
+                <div class="chat3">
+                    <p>Your idea for this application is nice!</p>
+                </div>
+            </div>
+            <hr>
+            
+            <div class="last">
+                Type a message...
+                    <i class='bx bx-plus' style="margin-left: 420px;"></i>
+                    <i class='bx bx-smile'  ></i>
+            </div>
+            
+
+        </div>
+
+    </section>
+</body>
+</html>
