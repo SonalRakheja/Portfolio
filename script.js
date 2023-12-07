@@ -1,13 +1,4 @@
 
-
-
-(function () {
-    emailjs.init("9BUXo4lOiyMyA0RKb");
-})();
-
-
-
-
 // toggle icon navbar
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
