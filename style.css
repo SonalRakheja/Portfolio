@@ -40,7 +40,7 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    transition: .3s;
+    transition: .2s;
 }
 
 .header.sticky {
@@ -62,7 +62,7 @@ body{
     color: var(--text-color);
     font-weight: 500;
     margin-left: 3.5rem;
-    /*transition: .3s;*/
+    transition: .3s;
 }
 
 .navbar a:hover , 
@@ -87,7 +87,9 @@ section{
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url(home.png);
+    /* background: #081b29; */
+    background: url(copy.png);
+    /* background: url(home.png); */
     background-position: center;
     background-size:cover ;
     background-repeat: no-repeat;
@@ -128,8 +130,8 @@ section{
 }
 
 .home.show-animate .home-content .text-animate h3{
-    animation: homeBgText 6s linear infinite;
-    animation-delay: 2s;
+    animation: homeBgText 4s linear infinite;
+    animation-delay: 1s;
 }
 
 .home-content .text-animate h3::before{
@@ -145,8 +147,8 @@ section{
 }
 
 .home.show-animate .home-content .text-animate h3::before{
-    animation: homeCursorText 6s linear infinite;
-    animation-delay: 2s;
+    animation: homeCursorText 4s linear infinite;
+    animation-delay: 1s;
 }
 
 .home-content p {
@@ -180,7 +182,7 @@ section{
     color: var(--bg-color);
     z-index: 1;
     overflow: hidden;
-    transition: .5s;
+    transition: .3s;
 }
 .btn-box .btn:hover{
     color: var(--main-color);
@@ -206,7 +208,7 @@ section{
     height: 100%;
     background: var(--bg-color) ;
     z-index: -1;
-    transition: .5s;
+    transition: .3s;
 }
 
 .btn-box .btn:hover::before{
@@ -236,7 +238,7 @@ section{
     color: var(--main-color);
     z-index: 1;
     overflow: hidden;
-    transition: .5s;
+    transition: .3s;
 }
 
 .home-sci a:hover{
@@ -252,7 +254,7 @@ section{
     height: 100%;
     background: var(--main-color) ;
     z-index: -1;
-    transition: .5s;
+    transition: .3s;
 }
 
 .home-sci a:hover::before{
@@ -267,12 +269,12 @@ right: 0;
 width: 45%;
 height: 100%;
 background: transparent;
-transition: 3s;
+/* transition: 3s; */
 }
-.home-imgHover:hover{
+/* .home-imgHover:hover{
     background: var(--bg-color);
     opacity: .8;
-}
+} */
 
 
 .about{
@@ -418,7 +420,7 @@ span{
     height: 100%;
     background: var(--second-bg-color);
     z-index: -1;
-    transition: .5s;
+    transition: .3s;
 }
 
 .education-content .content:hover::before{
@@ -493,7 +495,7 @@ span{
     height: 100%;
     background: var(--bg-color);
     z-index: -1;
-    transition: .5s;
+    transition: .3s;
 }
 .skills-box .skills-content:hover::before{
     width: 100%;
@@ -542,7 +544,7 @@ span{
 
 .portfolio-box img {
     width: 100%;
-    transition: .5s ease;
+    transition: .3s ease;
 }
 
 .portfolio-box:hover img {
@@ -564,7 +566,7 @@ span{
     text-align: center;
     padding: 0 4rem;
     opacity: 0;
-    transition: .5s ease;
+    transition: .3s ease;
 }
 
 .portfolio-box:hover .portfolio-layer{
@@ -664,7 +666,7 @@ span{
     background: var(--second-bg-color);
     border-radius: .6rem;
     z-index: -1;
-    transition: .5s;
+    transition: .3s;
 }
 
 .contact form .input-box .input-field input:focus~.focus,
@@ -730,7 +732,7 @@ span{
     height: 100%;
     background: var(--second-bg-color);
     z-index: -1;
-    transition: .5s;
+    transition: .3s;
 }
 
 .footer-iconTop a:hover::before {
@@ -740,7 +742,7 @@ span{
 .footer-iconTop a i {
     font-size: 2.4rem ;
     color: var(--bg-color);
-    transition: .5s;
+    transition: .3s;
 }
 
 .footer-iconTop a:hover i {
@@ -771,7 +773,7 @@ span{
 #menu-icon .animate,
 .home.show-animate .animate {
     animation: showRight 1s ease forwards ;
-    animation-delay: calc(.3s * var(--i));
+    animation-delay: calc(.1s * var(--i));
 }
 
 .animate.scroll {
@@ -798,7 +800,7 @@ section:nth-child(odd) .animate.scroll,
 .portfolio.show-animate .animate.scroll,
 .contact.show-animate .animate.scroll,
 .footer.show-animate .animate.scroll {
-    transition-delay:calc(.2s * var(--i)) ;
+    transition-delay:calc(.1s * var(--i)) ;
     width: 0;
 }
 
